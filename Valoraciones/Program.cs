@@ -4,6 +4,7 @@ using System.Linq;
 using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
+using Valoraciones.EstructurasDeControl;
 
 namespace Valoraciones
 {
@@ -47,7 +48,24 @@ namespace Valoraciones
             EscribirValoraciones("El promedio de las valoraciones es: ", promedioValoraciones);
             EscribirValoraciones("La valoración máxima es: ", valoracionMax);
             EscribirValoraciones("La valoración mínima es: ", valoracionMin);
+            EscribirValoraciones("La letra de tu valoración es: " + libro.ValoracionesLetras);
+
+            // Estructura de control Switch Case
+            SwitchCase misCasos = new SwitchCase();
+            misCasos.EjemploSwitchCase1();
+            misCasos.EjemploSwitchCase2();
+            misCasos.EjemploSwitchCase3();
+
+            // Bucles
+            Bucles miBucle = new Bucles();
+            miBucle.BuclesForEach();
+            miBucle.BuclesForLoop();
+            miBucle.BuclesWhile();
+            miBucle.BuclesDoWhile();
+
             //Console.Beep();
+            //Condicionales condicionales = new Condicionales();
+            //condicionales.ComprobacionesConRetorno();
             Console.ReadLine();
 
         }
@@ -60,6 +78,11 @@ namespace Valoraciones
         private static void EscribirValoraciones(string descripcion, int valoracion)
         {
             Console.WriteLine("{0}" + "{1}", descripcion, valoracion);
+        }
+
+        private static void EscribirValoraciones(string descripcion)
+        {
+            Console.WriteLine("{0}", descripcion);
         }
     }
 }
