@@ -26,12 +26,12 @@ namespace Valoraciones
             // Publicar Valoraciones
 
             // Promedio de valoraciones
-            hablar.Speak("Este es el promedio de las valoraciones");
+            //hablar.Speak("Este es el promedio de las valoraciones");
             CalcularValoraciones publicar = libro.PublicarValoraciones();
-            Console.WriteLine("El promedio de las valoraciones es: " + publicar.promedioValoraciones);
-            Console.WriteLine("La valoración máxima es: " + publicar.valoracionMax);
-            Console.WriteLine("La valoración mínima es: " + publicar.valoracionMin);
-            Console.Beep();
+            Console.WriteLine("El promedio de las valoraciones es: " + publicar.PromedioValoraciones);
+            Console.WriteLine("La valoración máxima es: " + publicar.ValoracionMax);
+            Console.WriteLine("La valoración mínima es: " + publicar.ValoracionMin);
+            //Console.Beep();
             Console.ReadLine();
             // Valoración Minima
             // Valoración Maxima

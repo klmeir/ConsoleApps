@@ -22,11 +22,11 @@ namespace Valoraciones
             float sumaValoraciones = 0;
             foreach(float valoracion in valoraciones)
             {
-                calculo.valoracionMin = Math.Min(valoracion, calculo.valoracionMin);
-                calculo.valoracionMax = Math.Max(valoracion, calculo.valoracionMax);
+                calculo.ValoracionMin = Math.Min(valoracion, calculo.ValoracionMin);
+                calculo.ValoracionMax = Math.Max(valoracion, calculo.ValoracionMax);
                 sumaValoraciones += valoracion;
             }
-            calculo.promedioValoraciones = sumaValoraciones / valoraciones.Count;
+            calculo.PromedioValoraciones = sumaValoraciones / valoraciones.Count;
             return calculo;
         }
 

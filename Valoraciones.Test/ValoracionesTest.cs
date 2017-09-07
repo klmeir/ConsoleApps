@@ -22,7 +22,7 @@ namespace Valoraciones.Test
 
             CalcularValoraciones calculo = libro.PublicarValoraciones();
 
-            Assert.AreEqual(5,calculo.valoracionMax);
+            Assert.AreEqual(5,calculo.ValoracionMax);
         }
 
         [TestMethod]
@@ -38,7 +38,7 @@ namespace Valoraciones.Test
 
             CalcularValoraciones calculo = libro.PublicarValoraciones();
 
-            Assert.AreEqual(0.5, calculo.valoracionMin);
+            Assert.AreEqual(0.5, calculo.ValoracionMin);
         }
 
         [TestMethod]
@@ -54,7 +54,7 @@ namespace Valoraciones.Test
 
             CalcularValoraciones calculo = libro.PublicarValoraciones();
 
-            Assert.AreEqual(2.83, calculo.promedioValoraciones, 0.01);
+            Assert.AreEqual(2.83, calculo.PromedioValoraciones, 0.01);
         }
 
     }
