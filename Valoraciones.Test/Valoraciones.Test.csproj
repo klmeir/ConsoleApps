@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipos\TiposDeReferenciaTest.cs" />
+    <Compile Include="Tipos\TiposDeValorTest.cs" />
+    <Compile Include="ImmutableTest.cs" />
     <Compile Include="ValoracionesTest.cs" />
   </ItemGroup>
   <ItemGroup>

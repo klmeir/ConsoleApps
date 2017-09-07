@@ -6,9 +6,29 @@ using System.Threading.Tasks;
 
 namespace Valoraciones
 {
+    public enum IdiomaLibro
+    {
+        none, EN, ES, GE, IT
+    }
+
     public class LibroValoraciones
     {
-
+        private string _nombre;
+        public string Nombre
+        {
+            get
+            {
+                return _nombre;
+            }
+            set
+            {
+                if (!String.IsNullOrEmpty(value))
+                {
+                    _nombre = value;
+                }                
+            }
+        }
+        public IdiomaLibro Idioma;
         public List<float> valoraciones;
 
         public LibroValoraciones()
